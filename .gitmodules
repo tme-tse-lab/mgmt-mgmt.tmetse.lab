@@ -1,0 +1,9 @@
+[submodule "bp-mgmt"]
+	path = bp-mgmt
+	url = https://github.com/tme-tse-lab/bp-mgmt-compact-3.tmetse.lab.git
+[submodule "values"]
+	path = values
+	url = https://github.com/tme-tse-lab/values-global-tmetse.lab.git
+[submodule "bp-common"]
+	path = bp-common
+	url = https://github.com/tme-tse-lab/bp-common.tmetse.lab.git
