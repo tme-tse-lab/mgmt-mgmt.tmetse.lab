@@ -1,0 +1,55 @@
+---
+apiVersion: operator.openshift.io/v1alpha1  
+kind: ImageContentSourcePolicy
+metadata:
+  labels:
+    operators.openshift.org/catalog: "true"
+  name: catalog-0
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/openshift-gitops-1
+    source: registry.redhat.io/openshift-gitops-1
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/rhel8
+    source: registry.redhat.io/rhel8
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/web-terminal
+    source: registry.redhat.io/web-terminal
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/openshift-logging
+    source: registry.redhat.io/openshift-logging
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/devworkspace
+    source: registry.redhat.io/devworkspace
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/ubi8-micro
+    source: registry.redhat.io/ubi8-micro
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/redhat
+    source: registry.redhat.io/redhat
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/rh-sso-7
+    source: registry.redhat.io/rh-sso-7
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/multicluster-engine
+    source: registry.redhat.io/multicluster-engine
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/odf4
+    source: registry.redhat.io/odf4
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/openshift4
+    source: registry.redhat.io/openshift4
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/rhceph
+    source: registry.redhat.io/rhceph
+---
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: generic-0
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - lab-registry.ocpmgmt.lab.diktio.net/nsatsia/operator-framework
+    source: quay.io/operator-framework
