@@ -4,6 +4,6 @@ metadata:
   name: redhat-operator-index
   namespace: openshift-marketplace
 spec:
-  image: {{ coalesce $.Values.mgmt.registry.url $.Values.global.registry.url }}/cache-registryredhatio/redhat/redhat-operator-index:v4.10
+  image: {{ $.Values.mgmt.registry.url }}/cache-registryredhatio/redhat/redhat-operator-index:v4.10
   publisher: Red Hat
   sourceType: grpc
