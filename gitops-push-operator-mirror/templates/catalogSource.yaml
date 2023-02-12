@@ -7,3 +7,7 @@ spec:
   image: {{ $.Values.mgmt.registry.url }}/cache-registryredhatio/redhat/redhat-operator-index:v4.10
   publisher: Red Hat
   sourceType: grpc
+  displayName: TMETSE OperatorHub Quay Cache Proxy
+  updateStrategy:
+    registryPoll: 
+      interval: 30m
